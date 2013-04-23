@@ -1,2 +1,163 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "CodelearnNewDesignRails" %></title>
+    <%= csrf_meta_tags %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+  </head>
+  <body>
+
+	  <div class="navbar navbar-fluid-top navbar-inverse">
+		  <div class="navbar-inner" style="height:90%; padding: 25px;">
+			  <div class="container-fluid" style="max-width:950px; margin:auto">
+				  <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+				  </a>
+				  <a class="brand" href="#">Codelearn</a>
+				  <div class="container-fluid nav-collapse">
+					  <ul class="nav pull-right">
+						  <li><%= link_to "Link1", "/path1"  %></li>
+						  <li><%= link_to "Link2", "/path2"  %></li>
+						  <li><%= link_to "Link3", "/path3"  %></li>
+						  <li><%= link_to "Link1", "/path1"  %></li>
+						  <li><%= link_to "Link2", "/path2"  %></li>
+						  <li><%= link_to "Link3", "/path3"  %></li>
+					  </ul>
+				  </div><!--/.nav-collapse -->
+
+				  <div class="row-fluid" style="margin-top:40px;" >
+					  <div class="span6">
+						  <h1>Learn Ruby On Rails By Creating An App Right In Your Browser.</h1>
+						  <h3>With our hassle free virtual server and awesome tutorials, learning rails has never been easier.</h3>
+						  <p style="text-align:center">
+						  	<a href="" class="btn btn-primary btn-large">Try a Free Rails Tutorial</a>
+						  </p>
+					  </div>
+					  <div class="span6">
+						  <div class="row-fluid">
+							  <div class="span12">
+								  <ul class="nav nav-tabs">
+									  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+									  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+									  <li><a href="#messages" data-toggle="tab">Messages</a></li>
+									  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+								  </ul>
+							  </div>
+						  </div>
+						  <div class="row-fluid">
+							  <div class="span12">
+								  <div class="tab-content">
+									  <div class="tab-pane active" id="home"><img src="http://placehold.it/400x400"></div>
+									  <div class="tab-pane" id="profile"><img src="http://placehold.it/400x400"></div>
+									  <div class="tab-pane" id="messages"><img src="http://placehold.it/400x400"></div>
+									  <div class="tab-pane" id="settings"><img src="http://placehold.it/400x400"></div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="container-fluid" style="max-width:950px; margin:auto">
+		  <div class="row-fluid">
+			  <div class="span3">
+				  <div style="text-align:center">
+				  	<img src="http://placehold.it/100x100"/><br/>
+					<h3>Rails On Your Browser</h3>
+				  </div>
+				  <span>LorumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+			  </div>
+			  <div class="span3">
+				  <div style="text-align:center">
+				  	<img src="http://placehold.it/100x100"/><br/>
+					<h3>Rails On Your Browser</h3>
+				  </div>
+				  <span>LorumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+			  </div>
+			  <div class="span3">
+				  <div style="text-align:center">
+				  	<img src="http://placehold.it/100x100"/><br/>
+					<h3>Rails On Your Browser</h3>
+				  </div>
+				  <span>LorumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+			  </div>
+			  <div class="span3">
+				  <div style="text-align:center">
+				  	<img src="http://placehold.it/100x100"/><br/>
+					<h3>Rails On Your Browser</h3>
+				  </div>
+				  <span>LorumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+			  </div>
+
+		  </div><!--/row-->
+
+		  <div class="row-fluid" style="margin-top:50px">
+			  <div class="span12 alert alert-info" style="padding:40px;">
+				  <h3>I've tried Codelearn and think it takes an interesting approach that could give its users a big advantage compared to other Rails tutorial sites.</h3>
+				  <p>The idea of having an interactive development tool within the browser isn't anything new but Codelearn has taken it a step further by hooking up an in-browser terminal to a real virtual server.</p>
+				  <div style="margin-top:30px;">
+					  <img src="http://placehold.it/50x50" class="pull-left">
+					  <div class="pull-left" style="margin-left:20px">
+						  <h4>Peter Cooper</h4>
+						  <p style="font-size:small">Author of Railsinside & RubyWeekly</p>
+					  </div>
+					  <img src="http://placehold.it/100x50" class="pull-right">
+				  </div>
+			  </div>
+		  </div>
+
+		  <div class="row-fluid" style="margin-top:50px; margin-bottom:50px; text-align:center">
+			  <div class="span6">
+				  <h2>Try a tutorial and start learning Ruby On Rails in just minutes!</h2>
+			  </div>
+			  <div class="span6">
+				 <a href="" class="btn btn-primary btn-large">Try a Free Rails Tutorial</a>
+			  </div>
+		  </div>
+	  </div> <!-- /container -->
+
+	  <footer>
+	  <p>&copy; Company 2013</p>
+	  </footer>
+
+	  <!-- Javascripts
+	  ================================================== -->
+	  <!-- Placed at the end of the document so the pages load faster -->
+	  <%= javascript_include_tag "application" %>
+
+  </body>
+</html>
