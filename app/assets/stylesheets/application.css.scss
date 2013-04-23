@@ -205,14 +205,14 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
     a{
       background: #EEE;
       margin: 0;
-      color: #3a87ad;
+      color: $linkColor !important;
       border-right-color: #CCC;
       @include border-radius(0px !important);
     }
     &.active {
       > a{
         background-color: #EEE !important;
-        color: $black!important;
+      	color: $linkColorHover !important;
         border-color: transparent;
       }
     }
