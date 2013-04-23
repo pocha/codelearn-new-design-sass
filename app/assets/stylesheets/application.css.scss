@@ -363,6 +363,25 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
   h2, h5 {
 	line-height: 125%;
   }
+  //Testimonials
+  .alert {
+    h3 {
+      font-weight: normal;
+    }
+    .author {
+      .photo {
+        @include border-radius(5px);
+        border: 2px solid $white;
+      }
+      .author-meta {
+        color: $black;
+        .name {
+          color: $black;
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }
 
 #shah-footer-wrapper a, #shah-header-wrapper a, .shah-button a {
