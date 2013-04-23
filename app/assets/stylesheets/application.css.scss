@@ -55,7 +55,7 @@ $btnBackground:                     $white !default;
 $btnBackgroundHighlight:            darken($white, 10%) !default;
 $btnBorder:                         #ccc !default;
 
-$btnPrimaryBackground:              $linkColor !default;
+$btnPrimaryBackground:              #eb3753;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
@@ -72,32 +72,6 @@ $btnDangerBackgroundHighlight:      #bd362f !default;
 
 $btnInverseBackground:              #444 !default;
 $btnInverseBackgroundHighlight:     $grayDarker !default;
-
-
-// Forms
-// -------------------------
-$inputBackground:               $white !default;
-$inputBorder:                   #ccc !default;
-$inputBorderRadius:             $baseBorderRadius !default;
-$inputDisabledBackground:       $grayLighter !default;
-$formActionsBackground:         #f5f5f5 !default;
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-
-
-// Dropdowns
-// -------------------------
-$dropdownBackground:            $white !default;
-$dropdownBorder:                rgba(0,0,0,.2) !default;
-$dropdownDividerTop:            #e5e5e5 !default;
-$dropdownDividerBottom:         $white !default;
-
-$dropdownLinkColor:             $grayDark !default;
-$dropdownLinkColorHover:        $white !default;
-$dropdownLinkColorActive:       $white !default;
-
-$dropdownLinkBackgroundActive:  $linkColor !default;
-$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
-
 
 // Navbar
 // -------------------------
@@ -149,11 +123,27 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
 	src: url('fonts/ProximaNova-Light.otf');
 	font-weight:100;
 }
+
+/* Mixins */
+@mixin custom-button($color, $textcolor) {
+  background: $color;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));
+  background-image:    -moz-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));
+  background-image:      -o-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));
+  background-image:         linear-gradient(to bottom, rgba(255,255,255,0.1),rgba(0,0,0,0.25));
+  color: $textcolor;
+  @include border-radius(30px);
+}
+
 $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+.container-fluid .btn-primary {
+  //@include custom-button('#eb3753','#FFF');
+  @include border-radius(30px);  
+}
 .brand{
   font-family: 'Ubuntu', sans-serif !important;
 	font-size: 30px;
