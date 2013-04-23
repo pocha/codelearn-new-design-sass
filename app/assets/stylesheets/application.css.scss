@@ -55,7 +55,7 @@ $btnBackground:                     $white !default;
 $btnBackgroundHighlight:            darken($white, 10%) !default;
 $btnBorder:                         #ccc !default;
 
-$btnPrimaryBackground:              #eb3753;
+$btnPrimaryBackground:              #b02147;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
@@ -156,18 +156,14 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
 	margin-top: 5px;
 }
 
+
 .thin {
   font-weight: 300;
 }
 
 /* Home Page Specific Rules */
 #home_page {
-  h1, h3, h4 {
-    line-height: 150%;
-  }
-  h2, h5 {
-	line-height: 125%;
-  }
+ 
   //Testimonials
   .alert {
     h3 {
