@@ -183,6 +183,9 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
       }
     }
   }
+  .nav-tabs {
+    border-top: 15px solid #CCC;
+  }    
 }
 
 //Home Page Features - Reusable
@@ -199,7 +202,6 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
 
 // TABS
 .nav-tabs {
-  border-top: 15px solid #CCC;
   @include border-radius( 5px 5px 0 0);
   li {
     a{
