@@ -210,6 +210,10 @@ $sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-s
       color: $linkColor !important;
       border-right-color: #CCC;
       @include border-radius(0px !important);
+      &:hover {
+        background: #EEE !important;
+        color: $linkColorHover !important;
+      }
     }
     &.active {
       > a{
