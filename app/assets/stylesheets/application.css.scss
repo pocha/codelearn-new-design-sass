@@ -300,6 +300,19 @@ $fluidGridGutterWidth1200:     percentage($gridGutterWidth1200/$gridRowWidth1200
 $fluidGridColumnWidth768:      percentage($gridColumnWidth768/$gridRowWidth768) !default;
 $fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768) !default;
 
+@font-face
+{
+	font-family: proximanova;
+	src: url('fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+	font-family: proximanova;
+	src: url('fonts/ProximaNova-Light.otf');
+	font-weight:100;
+}
+$sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
 @import "bootstrap";
 @import "bootstrap-responsive";
 
