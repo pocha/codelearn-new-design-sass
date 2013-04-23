@@ -1,5 +1,18 @@
 //custom variables here
 //$baseFontSize: 20px; 
 
+@font-face
+{
+	font-family: proximanova;
+	src: url('fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+	font-family: proximanova;
+	src: url('fonts/ProximaNova-Light.otf');
+	font-weight:100;
+}
+$sansFontFamily:        'proximanova',"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
 @import "bootstrap";
 @import "bootstrap-responsive";
